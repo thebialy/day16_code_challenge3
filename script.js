@@ -14,4 +14,5 @@ const  chunkArrayInGroups = (arr, size) => {
     console.log(groupArr)
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(["a", "b", "c", "d"], 2); 
+// expected output [["a","b"],["c","d"]]
