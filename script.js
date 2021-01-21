@@ -63,3 +63,20 @@ const bouncer = (arr) => {
 console.log(bouncer([7, "ate", "", false, 9]))
 // expected output [7, "ate", 9]
 
+// Challenge 5
+// Seek and Destroy (You will be provided with an initial array, followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments)
+
+const destroyer = (arr) => {
+    let args = Array.from(arguments)
+    args.splice(0, 1)
+    var targets = args
+
+    return arr.filter((num) => {
+        return targets.indexOf(num) === -1
+    })
+    
+
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3))
+// expected output [1, 1]
