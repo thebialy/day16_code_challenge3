@@ -16,3 +16,14 @@ const  chunkArrayInGroups = (arr, size) => {
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2); 
 // expected output [["a","b"],["c","d"]]
+
+// Challenege 2
+// Slasher Flick (return the remaining elements of an array after chopping off (n) elements from the head)
+
+const slasher = (arr, howMany) => {
+    arr.splice(0, howMany);
+    console.log(arr);
+}
+
+slasher([1, 2,3], 2);
+// expected output [3]
