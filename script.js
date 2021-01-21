@@ -45,3 +45,21 @@ const mutation = (arr) => {
 
 console.log(mutation(["hello", "hey"]))
 // expected output False
+
+// Challenge 4
+// Falsy Bouncer (remove all falsy value from an array)
+
+const bouncer = (arr) => {
+    let nonFalse = []
+
+    for (let x of arr) {
+        if(x) {
+            nonFalse.push(x)
+        }
+    }
+    return nonFalse
+}
+
+console.log(bouncer([7, "ate", "", false, 9]))
+// expected output [7, "ate", 9]
+
