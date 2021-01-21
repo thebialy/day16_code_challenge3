@@ -11,10 +11,10 @@ const  chunkArrayInGroups = (arr, size) => {
         groupArr.push(arr.slice(0, size))
         arr = arr.slice(size)
     }
-    console.log(groupArr)
+    return groupArr
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2); 
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2)); 
 // expected output [["a","b"],["c","d"]]
 
 // Challenege 2
@@ -22,8 +22,26 @@ chunkArrayInGroups(["a", "b", "c", "d"], 2);
 
 const slasher = (arr, howMany) => {
     arr.splice(0, howMany);
-    console.log(arr);
+    return arr
 }
 
-slasher([1, 2,3], 2);
+console.log(slasher([1, 2,3], 2));
 // expected output [3]
+
+// Challenge 3
+// Mutations (return true if the string in the first element of the array contains all of the letters of the string in the second element of the array)
+
+const mutation = (arr) => {
+    let wordOne = arr[0].toLowerCase()
+    let wordTwo = arr[1].toLowerCase()
+
+    for (let i=0; i < wordTwo.length; i++) {
+        if(wordOne.indexOf(wordTwo[i]) === -1) {
+            return false
+        }
+    } 
+    return true
+}
+
+console.log(mutation(["hello", "hey"]))
+// expected output False
