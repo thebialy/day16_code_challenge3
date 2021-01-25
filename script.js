@@ -14,7 +14,7 @@ const  chunkArrayInGroups = (arr, size) => {
     return groupArr
 }
 
-console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2)); 
+chunkArrayInGroups(["a", "b", "c", "d"], 2)
 // expected output [["a","b"],["c","d"]]
 
 // Challenege 2
@@ -42,8 +42,8 @@ const mutation = (arr) => {
     } 
     return true
 }
+mutation(["hello", "hey"])
 
-console.log(mutation(["hello", "hey"]))
 // expected output False
 
 // Challenge 4
@@ -60,7 +60,7 @@ const bouncer = (arr) => {
     return nonFalse
 }
 
-console.log(bouncer([7, "ate", "", false, 9]))
+bouncer([7, "ate", "", false, 9])
 // expected output [7, "ate", 9]
 
 // Challenge 5
@@ -78,5 +78,5 @@ const destroyer = (arr) => {
 
 }
 
-console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3))
+destroyer([1, 2, 3, 1, 2, 3], 2, 3)
 // expected output [1, 1]
