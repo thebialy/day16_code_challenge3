@@ -28,7 +28,7 @@ const slasher = (arr, howMany) => {
 console.log(slasher([1, 2,3], 2));
 // Expected Output [3]
 
-// Challenge 3
+// Challenge 3 //
 // Mutations (return true if the string in the first element of the array contains all of the letters of the string in the second element of the array)
 
 const mutation = (arr) => {
