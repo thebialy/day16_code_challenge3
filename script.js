@@ -63,7 +63,7 @@ const bouncer = (arr) => {
 bouncer([7, "ate", "", false, 9])
 // Expected Output [7, "ate", 9]
 
-// Challenge 5
+// Challenge 5 //
 // Seek and Destroy (You will be provided with an initial array, followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments)
 
 const destroyer = (arr) => {
