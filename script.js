@@ -15,9 +15,9 @@ const  chunkArrayInGroups = (arr, size) => {
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2)
-// expected output [["a","b"],["c","d"]]
+// Expected Output [["a","b"],["c","d"]] 
 
-// Challenege 2
+// Challenege 2 //
 // Slasher Flick (return the remaining elements of an array after chopping off (n) elements from the head)
 
 const slasher = (arr, howMany) => {
