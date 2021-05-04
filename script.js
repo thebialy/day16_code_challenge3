@@ -44,9 +44,9 @@ const mutation = (arr) => {
 }
 
 mutation(["hello", "hey"])
-// expected output False
+// Expected Output False
 
-// Challenge 4
+// Challenge 4 //
 // Falsy Bouncer (remove all falsy value from an array)
 
 const bouncer = (arr) => {
