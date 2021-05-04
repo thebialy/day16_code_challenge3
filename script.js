@@ -79,4 +79,4 @@ const destroyer = (arr) => {
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3)
-// expected output [1, 1]
+// Expected Output [1, 1]
